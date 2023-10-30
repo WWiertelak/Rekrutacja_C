@@ -1,5 +1,6 @@
 ## Django Text Processing & PESEL Validator Application
 
+This repository contains a Django application developed as part of a recruitment task. 
 Processing uploaded text files by shuffling the middle letters of each word while leaving the first and last letters unchanged.
 Validating PESEL numbers entered by the user, and providing information on its validity, the birth date, and gender of the PESEL owner.
 
