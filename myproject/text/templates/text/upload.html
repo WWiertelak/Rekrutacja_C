@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Przesyłanie pliku tekstowego</title>
+</head>
+<body>
+    <h2>Przesyłanie pliku tekstowego</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Prześlij</button>
+    </form>
+</body>
+</html>

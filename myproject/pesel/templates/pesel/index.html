@@ -1,0 +1,17 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Sprawdź</button>
+</form>
+
+{% if message %}
+<p>{{ message }}</p>
+{% endif %}
+
+{% if birth_date %}
+<p>Data urodzenia: {{ birth_date }}</p>
+{% endif %}
+
+{% if gender %}
+<p>Płeć: {{ gender }}</p>
+{% endif %}
